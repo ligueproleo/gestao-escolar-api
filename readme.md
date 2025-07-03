@@ -16,8 +16,8 @@ Esta é a forma mais simples e recomendada. Com o Docker instalado, você não p
 
 1. **Clone o repositório:**
    ```sh
-   git clone <URL_DO_SEU_REPOSITORIO>
-   cd imersao-devops-main
+   git clone https://github.com/ligueproleo/gestao-escolar-api.git
+   cd gestao-escolar-api
    ```
 
 2. **Construa a imagem Docker:**
@@ -32,8 +32,11 @@ Esta é a forma mais simples e recomendada. Com o Docker instalado, você não p
 
 ### Opção 2: Executando Localmente (Manual)
 
-1. **Faça o download do repositório:**
-   [Clique aqui para realizar o download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
+1. **Clone o repositório (se ainda não o fez):**
+   ```sh
+   git clone https://github.com/ligueproleo/gestao-escolar-api.git
+   cd gestao-escolar-api
+   ```
 
 2. **Crie um ambiente virtual:**
    ```sh
