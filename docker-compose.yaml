@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: gestao-escolar-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Monta o diretório atual no container para permitir o hot-reloading.
+      # O arquivo do banco de dados (escola.db) também será criado/persistido no seu diretório local.
+      - .:/app
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  # Se você preferir isolar o banco de dados em um volume do Docker em vez de
+  # mantê-lo no diretório local, você pode descomentar a linha abaixo e ajustar o volume no serviço.
+  # db_data:
+  
