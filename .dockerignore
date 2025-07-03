@@ -1,0 +1,7 @@
+venv
+__pycache
+.git
+.gitignore
+Dockerfile
+*.md
+escola.db*
